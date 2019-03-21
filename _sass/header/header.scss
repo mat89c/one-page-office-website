@@ -1,0 +1,125 @@
+.header {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	transition: 0.3s;
+
+	&.active {
+		background: rgba(0,0,0,0.8);
+	}
+
+	&__inside {
+		width: 100%;
+		max-width: $layout-width;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		@media (max-width: $tablet-breakpoint) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		@media (max-width: $nav-breakpoint) {
+			padding-top: 20px;
+		}
+
+		@media (max-width: 330px) {
+			padding-left: 0;
+		}
+	}
+
+	&__nav {
+		transition: 0.3s;
+
+		@media (max-width: $nav-breakpoint) {
+			visibility: hidden;
+			opacity: 0;
+			z-index: 777;
+			padding-top: 80px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background: rgba(0,0,0,0.95);
+		}
+
+		&.active {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+		display: inline-block;
+
+		@media (max-width: $nav-breakpoint) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		padding: 50px 15px 20px 15px;
+		color: #fff;
+		text-transform: uppercase;
+		transition: 0.2s;
+		display: inline-block;
+		border-radius: 0 0 2px 2px;
+		outline: none;
+
+		&:hover {
+			background: $active;
+		}
+
+		&.active {
+			background: $active;
+		}
+
+		@media (max-width: $nav-breakpoint) {
+			padding-top: 20px;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__icons {
+		list-style: none;
+		padding-bottom: 16px;
+
+		&-item {
+			display: inline-block;
+
+		}
+
+		&-link {
+			color: #fff;
+			background: #2c3232;
+			border-radius: 50%;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			padding-top: 7px;
+
+			path {
+				transition: 0.3s;
+			}
+
+			&:hover, &:focus {
+				path {
+					fill: $active!important;
+				}
+			}
+		}
+	}
+}

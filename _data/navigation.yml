@@ -1,0 +1,8 @@
+- name: Home
+  url: "#home"
+- name: About us
+  url: "#about-us"
+- name: Portfolio
+  url: "#portfolio"
+- name: Contact us
+  url: "#contact"

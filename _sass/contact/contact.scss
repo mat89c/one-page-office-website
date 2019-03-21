@@ -1,0 +1,88 @@
+$input-bg: #444349;
+
+.contact {
+	padding-top: 120px;
+	padding-bottom: 40px;
+
+	@media (max-width: 500px) {
+		margin-left: -60px;
+		margin-right: -60px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	&__title {
+		text-align: center;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 24px;
+		color: $portfolio-bg-color;
+		margin-bottom: 20px;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	&__form-wrapper {
+		width: 50%;
+		padding-right: 8px;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			padding-right: 0;
+			margin-bottom: 8px;
+		}
+	}
+
+	&__form-msg {
+		width: 50%;
+		padding-left: 8px;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			padding-left: 0;
+		}
+	}
+
+	&__form-name {
+		width: 100%;
+		background: $input-bg;
+		border: none!important;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 16px;
+		padding: 10px;
+		margin-bottom: 8px;
+		border-radius: 4px;
+	}
+
+	&__form-email {
+		width: 100%;
+		background: $input-bg;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 16px;
+		border: none;
+		padding: 10px;
+		border-radius: 4px;
+	}
+
+	&__form-msg {
+		border: none;
+		background: $input-bg;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 16px;
+		padding: 10px;
+		border-radius: 4px;
+	}
+
+	&__form-submit-wrapper {
+		text-align: center;
+		width: 100%;
+		margin-top: 30px;
+	}
+}

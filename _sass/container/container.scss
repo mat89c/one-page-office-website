@@ -1,0 +1,26 @@
+.container {
+	width: 100%;
+
+	@media (max-width: $tablet-breakpoint) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	&__inside {
+		width: 100%;
+		max-width: $layout-width;
+		padding: $layout-paddings;
+		margin: auto;
+	}
+
+	&--shadow {
+		box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.75);
+	}
+
+	&--last {
+		background: #1e1d1d;
+		margin-top: -200px;
+		padding-top: 200px;
+		box-shadow: 0px -3px 5px 1px rgba(0,0,0,0.8);
+	}
+}

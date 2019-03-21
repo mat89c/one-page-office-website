@@ -1,0 +1,44 @@
+<header class="header">
+	<div class="header__inside">
+
+		<button id="toggle" class="header__toggle closed">
+			<span class="header__toggle-btn"></span>
+		</button>
+
+		<nav class="header__nav">
+			<ul class="header__list">
+				{% for item in site.data.navigation %}
+					<li class="header__item"><a class="header__link" href="{{item.url}}">{{item.name}}</a></li>
+				{% endfor %}
+			</ul>
+		</nav>
+
+		<ul class="header__icons">
+			<li class="header__icons-item">
+				<a class="header__icons-link" href="#">
+					{% include facebook-icon.svg %}
+				</a>
+			</li>
+			<li class="header__icons-item">
+				<a class="header__icons-link" href="#">
+					{% include twitter-icon.svg %}
+				</a>
+			</li>
+			<li class="header__icons-item">
+				<a class="header__icons-link" href="#">
+					{% include instagram-icon.svg %}
+				</a>
+			</li>
+			<li class="header__icons-item">
+				<a class="header__icons-link" href="#">
+					{% include google-icon.svg %}
+				</a>
+			</li>
+			<li class="header__icons-item">
+				<a class="header__icons-link" href="#">
+					{% include linkedin-icon.svg %}
+				</a>
+			</li>
+		</ul>
+	</div>
+</header>

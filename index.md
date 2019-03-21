@@ -39,7 +39,7 @@ layout: default
 				</div>
 
 				<div class="about-us__person">
-					<img class="about-us__person-img" src="/assets/images/p2.jpg" alt="Proin bibendum">
+					<img class="about-us__person-img" src="{{ "/assets/images/p2.jpg" | prepend: site.base.url}}" alt="Proin bibendum">
 					<div class="about-us__person-info-wrapper">
 						<p class="about-us__person-name">Name Surname</p>
 						<p class="about-us__person-job">Graphic Designer</p>
@@ -48,7 +48,7 @@ layout: default
 				</div>
 
 				<div class="about-us__person">
-					<img class="about-us__person-img" src="/assets/images/p3.jpg" alt="Proin bibendum">
+					<img class="about-us__person-img" src="{{ "/assets/images/p3.jpg" | prepend: site.baseurl }}" alt="Proin bibendum">
 					<div class="about-us__person-info-wrapper">
 						<p class="about-us__person-name">Name Surname</p>
 						<p class="about-us__person-job">Web Design</p>
@@ -61,10 +61,10 @@ layout: default
 		<article id="portfolio" class="portfolio">
 			<h4 class="portfolio__title">Selected work</h4>
 			<div class="portfolio__images">
-				<img class="portfolio__image" src="{{ "/assets/images/img1.jpg" | relative_url }}" alt="Nam varius nisi">
-				<img class="portfolio__image" src="{{ "/assets/images/img2.jpg" | relative_url }}" alt="Nam varius nisi">
-				<img class="portfolio__image" src="{{ "/assets/images/img3.jpg" | relative_url }}" alt="Nam varius nisi">
-				<img class="portfolio__image" src="{{ "/assets/images/img4.jpg" | relative_url }}" alt="Nam varius nisi">
+				<img class="portfolio__image" src="{{ "/assets/images/img1.jpg" | prepend: site.baseurl }}" alt="Nam varius nisi">
+				<img class="portfolio__image" src="{{ "/assets/images/img2.jpg" | prepend: site.baseurl }}" alt="Nam varius nisi">
+				<img class="portfolio__image" src="{{ "/assets/images/img3.jpg" | prepend: site.baseurl }}" alt="Nam varius nisi">
+				<img class="portfolio__image" src="{{ "/assets/images/img4.jpg" | prepend: site.baseurl }}" alt="Nam varius nisi">
 			</div>
 		</article>
 	</div>

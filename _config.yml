@@ -17,8 +17,8 @@ title: One Page Office Website
 email: kontakt@czajka-mateusz.pl
 description: >- # this means to ignore newlines until "baseurl:"
   One Page Office Website.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/one-page-office-website" # the subpath of your site, e.g. /blog
+url: "https://mat89c.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  mat89c
 
 # Build settings

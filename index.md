@@ -77,7 +77,7 @@ layout: default
 			<form class="contact__form">
 				<div class="contact__form-wrapper">
 					<input class="contact__form-name" type="text" name="name" placeholder="Name" required aria-required="true">
-					<input class="contact__form-email" type="email" name="email" placeholder="Email" required aria-reqiured="true">
+					<input class="contact__form-email" type="email" name="email" placeholder="Email" required aria-required="true">
 				</div>
 				<textarea class="contact__form-msg" name="message" placeholder="Message"></textarea>
 				

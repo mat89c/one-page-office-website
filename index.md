@@ -30,7 +30,7 @@ layout: default
 				<h3 class="about-us__title">Our team<br>&nbsp;</h3>
 
 				<div class="about-us__person">
-					<img class="about-us__person-img" src="/assets/images/p1.jpg" alt="Proin bibendum">
+					<img class="about-us__person-img" src="{{ "/assets/images/p1.jpg" | prepend: site.baseurl }}" alt="Proin bibendum">
 					<div class="about-us__person-info-wrapper">
 						<p class="about-us__person-name">Name Surname</p>
 						<p class="about-us__person-job">Manager</p>
@@ -39,7 +39,7 @@ layout: default
 				</div>
 
 				<div class="about-us__person">
-					<img class="about-us__person-img" src="{{ "/assets/images/p2.jpg" | prepend: site.base.url}}" alt="Proin bibendum">
+					<img class="about-us__person-img" src="{{ "/assets/images/p2.jpg" | prepend: site.baseurl }}" alt="Proin bibendum">
 					<div class="about-us__person-info-wrapper">
 						<p class="about-us__person-name">Name Surname</p>
 						<p class="about-us__person-job">Graphic Designer</p>

@@ -3,7 +3,7 @@ layout: default
 ---
 <h1 data-title="title" id="home">Hello World</h1>
 
-<div class="container">
+<div data-title="title" class="container">
 	<div class="container__inside container--shadow">
 		<article class="home">
 			<div class="bg-fixed"></div>

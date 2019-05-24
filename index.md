@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<h1 data-test="test" data-title="Hello World" data-subtitle="subtitle" data-desc="description" class="title" data-link="link" id="home">Hello World</h1>
+<h1 id="home">Hello World</h1>
 
 <div class="container">
 	<div class="container__inside container--shadow">

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<h1 data-test="test" class="title" id="home">Hello World</h1>
+<h1 data-test="test" data-subtitle="subtitle" class="title" id="home">Hello World</h1>
 
 
 <div class="container">
